@@ -12,9 +12,3 @@ nodeGroups:
     volumeSize: 80
     ssh:
       allow: false
-  - name: ng-2
-    instanceType: t3.medium
-    desiredCapacity: 2
-    volumeSize: 80
-    ssh:
-      allow: false
