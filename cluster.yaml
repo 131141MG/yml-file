@@ -1,0 +1,20 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: mana-eks
+  region: us-west-2
+
+nodeGroups:
+  - name: ng-1
+    instanceType: t3.medium
+    desiredCapacity: 3
+    volumeSize: 80
+    ssh:
+      allow: false
+  - name: ng-2
+    instanceType: t3.medium
+    desiredCapacity: 2
+    volumeSize: 80
+    ssh:
+      allow: false
